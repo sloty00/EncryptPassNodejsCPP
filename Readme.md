@@ -55,8 +55,9 @@ Asegúrate de tener OpenSSL instalado y configurado en tu entorno.
 1. **Inicia el Servidor**
 
 ```bash
-Copiar código
+
 node index.js
+
 ```
 El servidor se iniciará en `http://localhost:3000.`
 
@@ -64,16 +65,15 @@ Envía una Solicitud para Cifrar una Contraseña
 
 Puedes usar curl o Postman para enviar una solicitud POST al endpoint /api/encrypt.
 
-    - Con curl:
+    - ** Con curl: **
 
 ```bash
 
-Copiar código
 curl -X POST http://localhost:3000/api/encrypt -H "Content-Type: application/json" -d '{"password":"miContraseñaSecreta"}'
 
 ```
 
-    - Con Postman:
+    - ** Con Postman: **
 
 Configura una solicitud POST a `http://localhost:3000/api/encrypt`.
 
@@ -88,7 +88,7 @@ En la pestaña de "Body", selecciona "raw" y "JSON" y proporciona el siguiente c
 ```
 Envía la solicitud y recibirás una respuesta JSON con el campo encrypted que contiene la contraseña cifrada en Base64.
 
-Ejemplo de Respuesta
+** Ejemplo de Respuesta **
 
 ```bash
 
